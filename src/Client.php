@@ -1,6 +1,8 @@
 <?php
 namespace Myrzan\TecDocClient;
 
+use Myrzan\TecDocClient\Generated\GetManufacturers;
+use Myrzan\TecDocClient\Generated\GetManufacturersResponse;
 use Myrzan\TecDocClient\Generated\GetAmBrands;
 use Myrzan\TecDocClient\Generated\GetAmBrandsResponse;
 use Myrzan\TecDocClient\Generated\GetArticleDirectSearchAllNumbersWithState;
@@ -60,6 +62,12 @@ class Client
     public function getAmBrands(GetAmBrands $paramsObject): GetAmBrandsResponse
     {
         $json = $this->call('getAmBrands', $paramsObject);
+        return $this->mapJsonToObject($json, new GetAmBrandsResponse());
+    }
+
+    public function getManufacturers(GetManufacturers $paramsObject): GetManufacturersResponse
+    {
+        $json = $this->call('getManufacturers', $paramsObject);
         return $this->mapJsonToObject($json, new GetAmBrandsResponse());
     }
 

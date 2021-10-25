@@ -36,5 +36,10 @@
         "psr-4": {
             "Myrzan\\TecDocClient\\Tests\\": "tests/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/raikeeen/tecdoc-php-client"
+        },
 }

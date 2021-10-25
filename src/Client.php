@@ -68,7 +68,7 @@ class Client
     public function getManufacturers(GetManufacturers $paramsObject): GetManufacturersResponse
     {
         $json = $this->call('getManufacturers', $paramsObject);
-        return $this->mapJsonToObject($json, new GetAmBrandsResponse());
+        return $this->mapJsonToObject($json, new GetManufacturersResponse());
     }
 
     public function getArticles(GetArticles $paramsObject): GetArticlesResponse

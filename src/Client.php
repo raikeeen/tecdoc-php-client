@@ -1,6 +1,8 @@
 <?php
 namespace Myrzan\TecDocClient;
 
+use Myrzan\TecDocClient\Generated\GetCountries;
+use Myrzan\TecDocClient\Generated\GetCountriesResponse;
 use Myrzan\TecDocClient\Generated\GetManufacturers;
 use Myrzan\TecDocClient\Generated\GetManufacturersResponse;
 use Myrzan\TecDocClient\Generated\GetAmBrands;
@@ -69,6 +71,12 @@ class Client
     {
         $json = $this->call('getManufacturers', $paramsObject);
         return $this->mapJsonToObject($json, new GetManufacturersResponse());
+    }
+
+    public function getCountries(GetCountries $paramsObject): GetCountriesResponse
+    {
+        $json = $this->call('getCountries', $paramsObject);
+        return $this->mapJsonToObject($json, new GetCountriesResponse());
     }
 
     public function getArticles(GetArticles $paramsObject): GetArticlesResponse

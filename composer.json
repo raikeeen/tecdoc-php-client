@@ -1,5 +1,5 @@
 {
-    "name": "myrzan/tecdoc-php-client",
+    "name": "raikeeen/tecdoc-php-client",
     "description": "TecDoc API PHP client",
     "license": ["LGPL-3.0-only"],
     "type": "library",
@@ -20,8 +20,7 @@
         "php": "^7.3",
         "ext-json": "*",
         "guzzlehttp/guzzle": "^7.0.1",
-        "netresearch/jsonmapper": "^2.1",
-        "myrzan/tecdoc-php-client": "dev-master"
+        "netresearch/jsonmapper": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.1",
@@ -37,10 +36,5 @@
         "psr-4": {
             "Myrzan\\TecDocClient\\Tests\\": "tests/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/raikeeen/tecdoc-php-client"
-        },
+    }
 }

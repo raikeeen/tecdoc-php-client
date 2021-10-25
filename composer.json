@@ -1,5 +1,5 @@
 {
-    "name": "raikeeen/tecdoc-php-client",
+    "name": "myrzan/tecdoc-php-client",
     "description": "TecDoc API PHP client",
     "license": ["LGPL-3.0-only"],
     "type": "library",
